@@ -10,6 +10,33 @@ html,body{
     /* overflow: hidden; */
     overflow-x: hidden;
 }
+#navbar{
+    width: 100%;
+    height: 15vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-left{
+    padding:0 1vw;
+    padding-top: 1vw;
+    font-size: 2.2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background-color: yellow; */
+    
+}
+#nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: blue; */
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
+}
+
 #page1{
     width: 100%;
     min-height: 100vh;
@@ -21,7 +48,7 @@ html,body{
     font-size: 17vw;
     text-transform: uppercase;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    line-height: 12vw;
+    line-height: 14vw;
 }
 #image-container{
     width: 100%;
