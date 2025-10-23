@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,9 +24,10 @@
             </div>
         <div id="page1">
             
-             <h1>Change <br>the course</h1>
+             <h1>Change</h1>
+              <h1>the course</h1>
              <div id="image-container">
-<img src="main.png" alt="">
+<img id="mainImg" src="main.png" alt="">
              </div>
              <div id="sweet-memories">
 <h2>SWEET MEMORIES</h2>
@@ -42,17 +44,17 @@
     <div id="menu-container">
         <div class="image-container2">
            
-        <img src="img1.jpg" alt="">
+        <img data-scroll data-scroll-speed="0.5" src="img1.jpg" alt="">
 
         </div>
         <div  class="image-container2">
            
-         <img src="img2.jpg" alt="">
+         <img data-scroll data-scroll-speed="0.5" src="img2.jpg" alt="">
 
         </div>
         <div class="image-container2">
           
-          <img src="img3.jpg" alt="">
+          <img data-scroll data-scroll-speed="0.5" src="img3.jpg" alt="">
 
         </div>
     </div>
@@ -68,13 +70,17 @@
     </div>
 </div>
 <div id="page3">
+ 
   <div class="image-container3">
+       
 <div class="box">
+    <div class="whitecircle"></div>
     <img src="product1.png" alt="">
     <h3>KATHERINE SABBATH X TWO GOOD CHILLI CHOCOLATE BAR</h3>
     <p>$16</p>
 </div>
 <div class="box">
+     <div class="whitecircle"></div>
     <img src="product2.png" alt="">
     <h3>DINOSAUR DESIGNS x TWO GOOD ALWAYS CELEBRATE WITH CAKE SET</h3>
     <p>$480</p>
@@ -82,11 +88,13 @@
     </div>
 <div class="image-container3">
 <div class="box">
+     <div class="whitecircle"></div>
     <img src="product3.png" alt="">
     <h3>HUNTER x TWO GOOD TOGETHERNESS AT OUR TABLE SET</h3>
     <p>$180</p>
 </div>
 <div class="box">
+     <div class="whitecircle"></div>
     <img src="product4.png" alt="">
     <h3>PEPE SAYA x TWO GOOD NOSTALGIA CERAMICS SET</h3>
     <p>$100</p>
@@ -121,6 +129,8 @@
    
 </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
 </html>
