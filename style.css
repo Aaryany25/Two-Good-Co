@@ -106,6 +106,7 @@ margin-top: 1vw;
      width: 100%;
     height: 100vh;
     display:flex;
+     /* flex-wrap: wrap;  */
     justify-content:space-around;
     margin-top: 1vw;
  
@@ -123,6 +124,7 @@ margin-top: 1vw;
 
 #page2 #section3{
     display:flex;
+    /* flex-wrap: wrap;  */
     /* background-color: aqua; */
     width: 100%;
     height: 50vh;
@@ -219,4 +221,72 @@ scale:0
       font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
       text-align: start;
       margin:3.5vw 0;
+}
+
+
+@media (max-width:600px) {
+    #nav-right{
+    display: none;
+}
+#nav-left{
+   
+    padding-top: 3vw;
+    font-size: 6.2vw;
+}
+#page1 h1{
+    font-size: 20vw;
+    text-transform: uppercase;
+ 
+    line-height: 18vw;
+}
+#image-container{
+    width: 100%;
+    height: 70vh;
+    /* background-color: aqua; */
+    margin-top: 7vw;
+}
+#sweet-memories h2{
+    margin-top: 5vw;
+    text-align: center;
+    font-size: 7vw;
+
+}
+#sweet-memories p{
+font-size: 25px;
+margin-top: 6vw;
+    
+}
+#page2 #text{
+    font-size: 20px;
+
+}
+#menu-container {
+    flex-direction: column;
+    align-items: center;
+     gap: 2rem; 
+     height: auto; 
+    flex-wrap: wrap;
+  }
+   #section3 {
+    flex-direction: column; /* stack vertically */
+    align-items: flex-start;
+  }
+
+  #section3 #left,
+  #section3 #right {
+    width: 100%;
+    text-align: left;
+  }
+
+  #section3 #left {
+    font-size: 8vw;
+  }
+
+  #section3 #right {
+    font-size: 3.5vw;
+    padding: 4vw 2vw;
+  }
+  #responsive-container{
+    flex-direction: column-reverse;
+  }
 }
