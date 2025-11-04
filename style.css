@@ -138,6 +138,7 @@ margin-top: 1vw;
      /* flex-wrap: wrap;  */
     justify-content:space-around;
     margin-top: 1vw;
+    gap: 1vw;
  
 }
 .image-container2 {
@@ -293,7 +294,7 @@ scale:0
 
 }
 
-@media (max-width:600px) {
+@media (max-width:1000px) {
   #icons {
    display: flex;
 }
@@ -327,6 +328,18 @@ margin-top: 6vw;
 #page2 #text{
     font-size: 20px;
 
+}
+#page2 .dets{
+    
+      width: 50%;
+    height: 50px;
+    background-color: #DCC0B4;
+    position: absolute;
+    z-index:9;
+    top: 50%;
+    left: 30%;
+    /* transform: translate(-50%,-50%); */
+    border-radius: 50px;
 }
 #menu-container {
     flex-direction: column;
