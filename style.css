@@ -320,4 +320,22 @@ margin-top: 6vw;
   .box img{
     height: 55%;
 }
+
+#footer{
+    flex-direction:column-reverse;
+    align-items: center;
+     gap: 2rem; 
+     height: auto; 
+    flex-wrap: wrap;
+  }
+  #Impact{
+    width:100%;
+}
+#Impact h2{
+    font-size: 5vw;
+}
+#Impact p{
+    font-size: 2vw;
+
+}
 }
