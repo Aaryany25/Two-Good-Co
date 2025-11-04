@@ -14,32 +14,61 @@ html,body{
     /* overflow: hidden; */
     overflow-x: hidden;
 }
-#navbar{
+#nav {
+    /* height: 100px; */
     width: 100%;
-    height: 15vh;
-    /* background-color: red; */
+    /* background-color: burlywood; */
+    position: fixed;
+    z-index: 99;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    padding: 25px;
 }
-#nav-left{
-    padding:0 1vw;
-    padding-top: 1vw;
-    font-size: 2.2vw;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* background-color: yellow; */
-    
-}
-#nav-right{
+
+#nav #nav-part2 {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    /* background-color: blue; */
-    width: 50%;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    gap: 40px;
 }
+
+#links {
+    padding: 10px;
+}
+
+#nav-part1 {
+    /* background-color: RED; */
+    height: 82px;
+    overflow: hidden;
+}
+
+#nav-part1 svg {
+    display: block;
+}
+
+#nav-part2 #links a {
+    text-transform: uppercase;
+
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 20px;
+}
+
+#icons {
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #F7F7F7;
+}
+
+#nav-part2 #icons i {
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+
 
 #page1{
     width: 100%;
@@ -113,15 +142,34 @@ margin-top: 1vw;
 }
 .image-container2 {
     overflow: hidden;
+    position: relative;
 }
 .image-container2 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    scale:1.5
+    scale:1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
+#page2 .dets{
+    width: 80%;
+    height: 60px;
+    background-color: #DCC0B4;
+    position: absolute;
+    z-index:9;
+    top: 50%;
+    left: 10%;
+    /* transform: translate(-50%,-50%); */
+    border-radius: 50px;
+}
+#page2 .dets:hover{
+    /* width: 80%; */
+    height: 200px;
 
+}
 #page2 #section3{
     display:flex;
     /* flex-wrap: wrap;  */
@@ -176,7 +224,8 @@ flex-direction: column;
 margin-left: 1vw;
 margin-top:1vw;
 padding:0 2vw;
-position:relative
+position:relative;
+cursor: pointer;
 }
 .box img{
     width: 100%;
