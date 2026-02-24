@@ -115,6 +115,6 @@ function navbarAnimation() {
   });
 }
 navbarAnimation()
+navbarAnimation()
 ProductAnimation()
 LoadingAnimation()
-navbarAnimation()
